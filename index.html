@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>65 Street Shop | Официальный сайт</title>
+
+<style>
+
+/* =========================
+   COLORS
+========================= */
+
+:root {
+  --cream: #D8C7AA;
+  --cream-light: #E8DCC7;
+  --brown: #493229;
+  --brown-dark: #2A1C17;
+  --brown-deep: #19110F;
+  --black: #0E0D0C;
+  --white: #F8F4EC;
+  --gold: #B89555;
+  --gold-light: #D5B76F;
+  --muted: #AFA092;
+  --border: rgba(184,149,85,0.55);
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--white);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+
+  background:
+    linear-gradient(
+      135deg,
+      #D8C7AA 0%,
+      #B79D7C 30%,
+      #6A4A3A 65%,
+      #2A1C17 100%
+    );
+
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(25,17,15,0.94);
+
+  backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 70px;
+  padding: 15px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--gold-light);
+}
+
+.nav-menu {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: var(--gold-light);
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.page-section {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 65px 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--white);
+  font-size: 31px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 430px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 50px 20px;
+
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(73,50,41,0.98),
+      rgba(25,17,15,0.98)
+    );
+
+  box-shadow:
+    0 30px 70px rgba(0,0,0,0.35);
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  top: -230px;
+  right: -150px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(213,183,111,0.22),
+      transparent 70%
+    );
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  bottom: -230px;
+  left: -150px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(216,199,170,0.15),
+      transparent 70%
+    );
+}
+
+.hero-banner h1 {
+  position: relative;
+  z-index: 2;
+
+  color: var(--white);
+
+  font-size: clamp(32px, 6vw, 55px);
+  font-weight: 900;
+  letter-spacing: 7px;
+
+  margin-bottom: 18px;
+}
+
+.hero-banner p {
+  position: relative;
+  z-index: 2;
+
+  color: var(--cream-light);
+
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   GOLD LINE
+========================= */
+
+.gold-line {
+  width: 70px;
+  height: 2px;
+
+  background: var(--gold);
+
+  margin: 25px auto;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-box {
+  margin-top: 30px;
+  padding: 38px;
+
+  background: rgba(42,28,23,0.94);
+
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+
+  border-radius: 4px;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.2);
+}
+
+.about-box h3 {
+  color: var(--gold-light);
+
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 2px;.about-box p {
+  margin-top: 14px;
+
+  color: var(--cream-light);
+
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+
+/* =========================
+   ORDER BOX
+========================= */
+
+.order-info-box {
+  background:
+    linear-gradient(
+      135deg,
+      #493229,
+      #241713
+    );
+
+  border: 1px solid var(--gold);
+
+  padding: 25px;
+
+  border-radius: 4px;
+
+  text-align: center;
+
+  margin-bottom: 40px;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.25);
+}
+
+.order-info-box p {
+  color: var(--white);
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+
+.order-info-box a {
+  color: var(--gold-light);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.order-info-box a:hover {
+  color: var(--white);
+}
+
+
+/* =========================
+   OUTFIT BUTTON
+========================= */
+
+.outfit-button {
+  display: block;
+
+  margin: 0 auto 35px;
+
+  padding: 15px 30px;
+
+  background: var(--gold);
+
+  color: var(--brown-deep);
+
+  border: 1px solid var(--gold-light);
+
+  border-radius: 4px;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.outfit-button:hover {
+  background: var(--gold-light);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.3);
+}
+
+
+/* =========================
+   OUTFIT BUILDER
+========================= */
+
+.outfit-builder {
+  display: none;
+
+  margin-bottom: 45px;
+
+  padding: 28px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(73,50,41,0.98),
+      rgba(25,17,15,0.98)
+    );
+
+  border: 1px solid var(--gold);
+
+  border-radius: 4px;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.3);
+}
+
+.outfit-builder.active {
+  display: block;
+}
+
+.outfit-builder h3 {
+  text-align: center;
+
+  color: var(--gold-light);
+
+  font-size: 20px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.outfit-hint {
+  text-align: center;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  margin-bottom: 25px;
+}
+
+
+/* ВЫБРАННЫЙ ОБРАЗ */
+
+.outfit-preview {
+  min-height: 180px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 12px;
+
+  margin-bottom: 30px;
+}
+
+.outfit-preview-item {
+  position: relative;
+
+  background: var(--black);
+
+  border: 1px solid var(--border);
+
+  padding: 5px;
+}
+
+.outfit-preview-item img {
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* КРЕСТИК */
+
+.remove-outfit {
+  position: absolute;
+
+  top: 7px;
+  right: 7px;
+
+  width: 29px;
+  height: 29px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background:
+    rgba(25,17,15,0.95);
+
+  color: var(--white);
+
+  cursor: pointer;
+
+  font-size: 19px;
+
+  line-height: 29px;
+}
+
+.remove-outfit:hover {
+  background: var(--gold);
+  color: var(--brown-deep);
+}
+
+
+/* ФОТО ДЛЯ ВЫБОРА */
+
+.outfit-products {
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, 1fr);
+
+  gap: 10px;
+}
+
+.outfit-product {
+  background: var(--black);
+
+  border:
+    1px solid
+    rgba(184,149,85,0.35);
+
+  padding: 5px;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.outfit-product:hover {
+  border-color: var(--gold-light);
+
+  transform: translateY(-3px);
+}
+
+.outfit-product.selected {
+  border:
+    2px solid
+    var(--gold-light);
+
+  box-shadow:
+    0 0 15px
+    rgba(213,183,111,0.25);
+}
+
+.outfit-product img {
+  width: 100%;
+
+  height: 150px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* CLEAR */
+
+.clear-outfit {
+  display: block;
+
+  margin: 25px auto 0;
+
+  padding: 11px 22px;
+
+  background: transparent;
+
+  border:
+    1px solid
+    var(--gold);
+
+  color: var(--gold-light);
+
+  cursor: pointer;
+
+  border-radius: 4px;
+
+  font-weight: 700;
+}
+
+.clear-outfit:hover {
+  background: var(--gold);
+
+  color: var(--brown-deep);
+}
+
+
+/* =========================
+   CATALOG
+========================= */
+
+.product-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(250px, 1fr)
+    );
+
+  gap: 22px;
+}
+
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+  position: relative;
+
+  overflow: hidden;
+
+  background: var(--black);
+
+  border:
+    1px solidborder-radius: 4px;
+
+  padding: 9px;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 10px 25px
+    rgba(0,0,0,0.18);
+}
+
+.product-card:hover {
+  transform: translateY(-7px);
+
+  border-color:
+    var(--gold-light);
+
+  box-shadow:
+    0 25px 50px
+    rgba(0,0,0,0.4);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.product-img {
+  display: block;
+
+  width: 100%;
+
+  height: 330px;
+
+  object-fit: cover;
+
+  border-radius: 2px;
+
+  background: #30221D;
+
+  filter:
+    saturate(0.92)
+    contrast(1.03);
+
+  transition:
+    transform 0.4s ease;
+}
+
+.product-card:hover
+.product-img {
+  transform: scale(1.025);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  margin-top: 60px;
+
+  padding: 55px 20px;
+
+  background: var(--brown-deep);
+
+  border-top:
+    1px solid var(--gold);
+}
+
+.footer-container {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  flex-wrap: wrap;
+
+  gap: 40px;
+}
+
+.footer-title {
+  color: var(--white);
+
+  margin-bottom: 12px;
+
+  letter-spacing: 2px;
+}
+
+.footer-description {
+  color: var(--muted);
+
+  max-width: 320px;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+.footer-contacts h3 {
+  color: var(--gold-light);
+
+  margin-bottom: 15px;
+
+  font-size: 15px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.footer-contacts p {
+  color: var(--white);
+
+  margin-bottom: 10px;
+
+  font-size: 15px;
+}
+
+.footer-contacts a {
+  color: var(--gold-light);
+
+  text-decoration: none;
+
+  font-weight: 700;
+}
+
+.footer-contacts a:hover {
+  color: var(--white);
+}
+
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.copyright {
+  max-width: 1200px;
+
+  margin: 40px auto 0;
+
+  padding-top: 20px;
+
+  text-align: center;
+
+  border-top:
+    1px solid #3A2B25;
+
+  color: #776B61;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .nav-container {
+    min-height: auto;
+
+    padding: 15px;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-menu {
+    gap: 17px;
+  }
+
+  .nav-menu a {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .page-section {
+    padding: 45px 12px;
+  }
+
+  .hero-banner {
+    min-height: 360px;
+
+    padding: 50px 15px;
+  }
+
+  .hero-banner h1 {
+    font-size: 31px;
+    letter-spacing: 4px;
+  }
+
+  .hero-banner p {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+
+  .about-box {
+    padding: 25px 20px;
+  }
+
+  .product-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .product-card {
+    padding: 6px;
+  }
+
+  .product-img {
+    height: 250px;
+  }
+
+  .outfit-preview {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .outfit-products {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .outfit-preview-item img {
+    height: 180px;
+  }
+
+  .outfit-product img {
+    height: 130px;
+  }
+}
+
+
+@media (max-width: 420px) {
+
+  .product-img {
+    height: 220px;
+  }
+
+  .outfit-products {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .outfit-product img {
+    height: 150px;
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+  <div class="nav-container">
+
+    <div class="logo">
+      65 street <span>shop</span>
+    </div>
+
+    <ul class="nav-menu">
+
+      <li>
+        <a href="#home">
+          Главная
+        </a>
+      </li>
+
+      <li>
+        <a href="#catalog">
+          Каталог
+        </a>
+      </li>
+
+      <li>
+        <a href="#contacts">
+          Контакты
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</header>
+
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section
+  id="home"
+  class="page-section"
+>
+
+  <div class="hero-banner">
+
+    <h1>
+      65 STREET SHOP
+    </h1>
+
+    <div class="gold-line"></div>
+
+    <p>
+      Твой уличный стиль.
+      <br>
+      Весь ассортимент в наличии.
+    </p>
+
+  </div>
+
+
+  <div class="about-box">
+
+    <h3>
+      О нашем магазине
+    </h3><p>
+      Добро пожаловать в 65 Street Shop.
+      Здесь собран актуальный ассортимент
+      одежды и аксессуаров для создания
+      современного streetwear-образа.
+      Выбирай свой стиль и связывайся с нами
+      для заказа.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CATALOG
+========================= -->
+
+<section
+  id="catalog"
+  class="page-section"
+>
+
+  <h2 class="section-title">
+    Каталог товаров
+  </h2>
+
+  <div class="gold-line"></div>
+
+
+  <div class="order-info-box">
+
+    <p>
+      🛍️ <strong>Как приобрести товар?</strong>
+    </p>
+
+    <p>
+      Для заказа или уточнения наличия
+      напишите нам:
+    </p>
+
+    <p>
+
+      Telegram:
+
+      <a
+        href="https://t.me/Plushkt"
+        target="_blank"
+      >
+        @Plushkt
+      </a>
+
+      &nbsp; • &nbsp;
+
+      Телефон:
+
+      <a
+        href="tel:+996700771504"
+      >
+        +996 700 771 504
+      </a>
+
+    </p>
+
+  </div>
+
+
+  <!-- =========================
+       OUTFIT BUTTON
+  ========================= -->
+
+  <button
+    class="outfit-button"
+    onclick="toggleOutfitBuilder()"
+  >
+    ✦ Собрать образ
+  </button>
+
+
+  <!-- =========================
+       OUTFIT BUILDER
+  ========================= -->
+
+  <div
+    class="outfit-builder"
+    id="outfitBuilder"
+  >
+
+    <h3>
+      Собери свой образ
+    </h3>
+
+    <p class="outfit-hint">
+      Нажми на вещи, которые хочешь добавить.
+      Можно выбрать до 4 вещей.
+    </p>
+
+
+    <!-- ВЫБРАННЫЕ ВЕЩИ -->
+
+    <div
+      class="outfit-preview"
+      id="outfitPreview"
+    ></div>
+
+
+    <!-- ВСЕ ФОТО ДЛЯ ВЫБОРА -->
+
+    <div
+      class="outfit-products"
+      id="outfitProducts"
+    ></div>
+
+
+    <button
+      class="clear-outfit"
+      onclick="clearOutfit()"
+    >
+      Очистить образ
+    </button>
+
+  </div>
+
+
+  <!-- =========================
+       MAIN CATALOG
+  ========================= -->
+
+  <div
+    class="product-grid"
+    id="productGrid"
+  ></div>
+
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer
+  id="contacts"
+>
+
+  <div class="footer-container">
+
+
+    <div>
+
+      <h2 class="footer-title">
+        65 STREET SHOP
+      </h2>
+
+      <p class="footer-description">
+        Уличная одежда и аксессуары.
+        Стиль, который выделяет.
+      </p>
+
+    </div>
+
+
+    <div class="footer-contacts">
+
+      <h3>
+        Связаться с нами
+      </h3>
+
+      <p>
+
+        ✈️ Telegram:
+
+        <a
+          href="https://t.me/Plushkt"
+          target="_blank"
+        >
+          @Plushkt
+        </a>
+
+      </p>
+
+      <p>
+
+        📱 Телефон / WhatsApp:
+
+        <a
+          href="tel:+996700771504"
+        >
+          +996 700 771 504
+        </a>
+
+      </p>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="copyright">
+
+    © 2026 65 Street Shop.
+    Все права защищены.
+
+  </div>
+
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+
+/* =========================
+   ОСНОВНОЙ КАТАЛОГ
+========================= */
+
+const productGrid =
+  document.getElementById("productGrid");
+
+const outfitProducts =
+  document.getElementById("outfitProducts");
+
+const outfitPreview =
+  document.getElementById("outfitPreview");
+
+const totalPhotos = 64;
+
+let selectedOutfit = [];
+
+
+/* =========================
+   СОЗДАЁМ ОСНОВНОЙ КАТАЛОГ
+========================= */
+
+for (
+  let i = 1;
+  i <= totalPhotos;
+  i++
+) {
+
+  const card =
+    document.createElement("div");
+
+  card.className =
+    "product-card";
+
+
+  card.innerHTML = 
+
+    <img
+
+      src="images/photo (${i}).jpg"
+
+      alt="65 Street Shop — товар ${i}"
+
+      class="product-img"
+
+      loading="lazy"
+
+    >
+
+  ;
+
+
+  productGrid.appendChild(card);
+
+}
+
+
+/* =========================
+   СОЗДАЁМ ФОТО ДЛЯ
+   КОНСТРУКТОРА ОБРАЗОВ
+========================= */
+
+for (
+  let i = 1;
+  i <= totalPhotos;
+  i++
+) {
+
+  const product =
+    document.createElement("div");
+
+  product.className =
+    "outfit-product";
+
+  product.dataset.id = i;
+
+
+  product.innerHTML = 
+
+    <img
+
+      src="images/photo (${i}).jpg"
+
+      alt="Товар ${i}"
+
+      loading="lazy"
+
+    >
+
+  ;
+    rgba(184,149,85,0.45);
+}product.addEventListener(
+    "click",
+    function() {
+
+      addToOutfit(i);
+
+    }
+  );
+
+
+  outfitProducts.appendChild(product);
+
+}
+
+
+/* =========================
+   ОТКРЫТЬ КОНСТРУКТОР
+========================= */
+
+function toggleOutfitBuilder() {
+
+  const builder =
+    document.getElementById(
+      "outfitBuilder"
+    );
+
+
+  builder.classList.toggle(
+    "active"
+  );
+
+
+  if (
+    builder.classList.contains(
+      "active"
+    )
+  ) {
+
+    setTimeout(
+      function() {
+
+        builder.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+      },
+      100
+    );
+
+  }
+
+}
+
+
+/* =========================
+   ДОБАВИТЬ В ОБРАЗ
+========================= */
+
+function addToOutfit(id) {
+
+  if (
+    selectedOutfit.includes(id)
+  ) {
+
+    selectedOutfit =
+      selectedOutfit.filter(
+        function(item) {
+          return item !== id;
+        }
+      );
+
+  } else {
+
+    if (
+      selectedOutfit.length >= 4
+    ) {
+
+      alert(
+        "Можно добавить максимум 4 вещи."
+      );
+
+      return;
+
+    }
+
+
+    selectedOutfit.push(id);
+
+  }
+
+
+  updateOutfit();
+
+}
+
+
+/* =========================
+   ОБНОВИТЬ ОБРАЗ
+========================= */
+
+function updateOutfit() {
+
+  outfitPreview.innerHTML = "";
+
+
+  document
+    .querySelectorAll(
+      ".outfit-product"
+    )
+    .forEach(
+      function(product) {
+
+        const id =
+          Number(
+            product.dataset.id
+          );
+
+
+        product.classList.toggle(
+          "selected",
+          selectedOutfit.includes(id)
+        );
+
+      }
+    );
+
+
+  selectedOutfit.forEach(
+    function(id) {
+
+      const item =
+        document.createElement("div");
+
+
+      item.className =
+        "outfit-preview-item";
+
+
+      item.innerHTML = 
+
+        <img
+
+          src="images/photo (${id}).jpg"
+
+          alt="Товар ${id}"
+
+        >
+
+        <button
+
+          class="remove-outfit"
+
+          onclick="removeFromOutfit(${id})"
+
+        >
+          ×
+        </button>
+
+      ;
+
+
+      outfitPreview.appendChild(
+        item
+      );
+
+    }
+  );
+
+}
+
+
+/* =========================
+   УДАЛИТЬ ВЕЩЬ
+========================= */
+
+function removeFromOutfit(id) {
+
+  selectedOutfit =
+    selectedOutfit.filter(
+      function(item) {
+        return item !== id;
+      }
+    );
+
+
+  updateOutfit();
+
+}
+
+
+/* =========================
+   ОЧИСТИТЬ ОБРАЗ
+========================= */
+
+function clearOutfit() {
+
+  selectedOutfit = [];
+
+  updateOutfit();
+
+}
+
+
+</script>
+
+
+</body>
+</html>
